@@ -1,11 +1,4 @@
-import {
-  StyleSheet,
-  Text,
-  View,
-  Image,
-  Touchable,
-  ScrollView,
-} from "react-native";
+import { StyleSheet, Text, View, Image, ScrollView } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import tw from "twrnc";
@@ -57,7 +50,9 @@ const Wallet = () => {
       </View>
 
       <ScrollView style={tw`bg-gray-800 h-200 mt-10 rounded-t-md`}>
-        <FiatDisplay />
+        <View style={tw`pt-5`}>
+          <FiatDisplay />
+        </View>
         <FiatDisplay />
         <FiatDisplay />
         <FiatDisplay />
